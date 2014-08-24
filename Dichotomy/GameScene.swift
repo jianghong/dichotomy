@@ -9,18 +9,43 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    let ship: Type0!
+    let shipSprite: SKSpriteNode!
+    
+    override init(size: CGSize) {
+        super.init(size: size)
+        self.ship = Type0()
+        self.shipSprite = ship.sprite
+        shipSprite.position = CGPoint(x: self.frame.size.width / 2, y: shipSprite.size.height / 2)
+        self.addChild(shipSprite)
+        
+        let currWeapon = self.ship.readiedShot
+        self.addChild(currWeapon.leftShot.sprite)
+        self.addChild(currWeapon.rightShot.sprite)
+        
+        self.drawAndFireShots(currWeapon.leftShot.sprite)
+        self.drawAndFireShots(currWeapon.rightShot.sprite)
+    }
+    
+    required init(coder aDecoder: NSCoder!) {
+        super.init(coder: aDecoder)
+    }
+    
     override func didMoveToView(view: SKView) {
         /* Setup your scene here */
-        let typeZeroShip = Type0()
-        let shipSprite = SKSpriteNode(imageNamed: typeZeroShip.spriteName)
-        // y can't be 0 or else the half of the ship sprite will out of bounds of window
-        shipSprite.size = CGSize(width: 50, height: 50)
-        shipSprite.position = CGPoint(x: self.frame.size.width / 2, y: shipSprite.size.height / 2)
-        
-        self.addChild(shipSprite)
     }
     
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+    }
+    
+    func drawAndFireShots(shotSprite: SKSpriteNode) {
+        let fireWeapon = SKAction.moveByX(0, y: 600, duration: NSTimeInterval(1))
+        let reloadAction = SKAction.runBlock({
+            self.ship.reload()
+        })
+        let fireAndWait = SKAction.group([fireWeapon, reloadAction])
+        let repeatShot = SKAction.repeatActionForever(fireAndWait)
+        shotSprite.runAction(repeatShot)
     }
 }
