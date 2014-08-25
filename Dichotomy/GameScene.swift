@@ -40,7 +40,7 @@ class GameScene: SKScene {
     }
     
     func drawAndFireShots(shotSprite: SKSpriteNode) {
-        let fireWeapon = SKAction.moveByX(0, y: 600, duration: NSTimeInterval(1))
+        let fireWeapon = SKAction.moveByX(0, y: 600, duration: NSTimeInterval(0.30))
         let reloadAction = SKAction.runBlock({
             self.ship.reload()
         })
