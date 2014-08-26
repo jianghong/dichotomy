@@ -47,4 +47,10 @@ class PlayerShip {
         let rightShotX = self.sprite.position.x + self.readiedShot.rightShot.positionOffset
         self.readiedShot.rightShot.sprite.position = CGPoint(x: rightShotX, y: self.sprite.position.y)
     }
+    
+    func move(byX x: CGFloat) {
+        self.sprite.removeAllActions()
+        let moveAction = SKAction.moveByX(x, y: 0, duration: NSTimeInterval(1))
+        self.sprite.runAction(moveAction)
+    }
 }

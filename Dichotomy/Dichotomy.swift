@@ -8,6 +8,5 @@
 
 import SpriteKit
 
-class DichotomyLogic {
-    
+class Dichotomy {
 }
