@@ -11,9 +11,12 @@ import SpriteKit
 
 class GameViewController: UIViewController, UIGestureRecognizerDelegate {
 
+    var panPointReference:CGPoint?
+
     @IBAction func didPan(sender: UIPanGestureRecognizer) {
         println("panning")
     }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
