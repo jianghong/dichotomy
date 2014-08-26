@@ -11,6 +11,7 @@
 		7A01474819A9476D00F62FDA /* Type0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474719A9476D00F62FDA /* Type0.swift */; };
 		7A01474C19A986CF00F62FDA /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474B19A986CF00F62FDA /* Laser.swift */; };
 		7A01474E19A9877B00F62FDA /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474D19A9877B00F62FDA /* Weapon.swift */; };
+		7A01475019AAEE1500F62FDA /* Dichotomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474F19AAEE1500F62FDA /* Dichotomy.swift */; };
 		7AA8ECFD19A931A000AFE9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ECFC19A931A000AFE9C6 /* AppDelegate.swift */; };
 		7AA8ED0119A931A000AFE9C6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ED0019A931A000AFE9C6 /* GameScene.swift */; };
 		7AA8ED0319A931A000AFE9C6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ED0219A931A000AFE9C6 /* GameViewController.swift */; };
@@ -34,6 +35,7 @@
 		7A01474719A9476D00F62FDA /* Type0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type0.swift; sourceTree = "<group>"; };
 		7A01474B19A986CF00F62FDA /* Laser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 		7A01474D19A9877B00F62FDA /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
+		7A01474F19AAEE1500F62FDA /* Dichotomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dichotomy.swift; sourceTree = "<group>"; };
 		7AA8ECF719A931A000AFE9C6 /* Dichotomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dichotomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA8ECFB19A931A000AFE9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AA8ECFC19A931A000AFE9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				7AA8ECFC19A931A000AFE9C6 /* AppDelegate.swift */,
 				7AA8ED0019A931A000AFE9C6 /* GameScene.swift */,
 				7AA8ED0219A931A000AFE9C6 /* GameViewController.swift */,
+				7A01474F19AAEE1500F62FDA /* Dichotomy.swift */,
 				7AA8ED0419A931A100AFE9C6 /* Main.storyboard */,
 				7AA8ED0719A931A100AFE9C6 /* Images.xcassets */,
 				7A01474A19A986BC00F62FDA /* Weapons */,
@@ -244,6 +247,7 @@
 				7AA8ED0119A931A000AFE9C6 /* GameScene.swift in Sources */,
 				7A01474E19A9877B00F62FDA /* Weapon.swift in Sources */,
 				7AA8ED0319A931A000AFE9C6 /* GameViewController.swift in Sources */,
+				7A01475019AAEE1500F62FDA /* Dichotomy.swift in Sources */,
 				7A01474819A9476D00F62FDA /* Type0.swift in Sources */,
 				7AA8ECFD19A931A000AFE9C6 /* AppDelegate.swift in Sources */,
 			);
