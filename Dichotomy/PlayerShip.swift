@@ -35,7 +35,6 @@ class PlayerShip {
     init(shipType: ShipType) {
         self.shipName = shipType.shipName
         self.sprite = SKSpriteNode(imageNamed: shipType.spriteName)
-        // y can't be 0 or else the half of the ship sprite will out of bounds of window
         self.sprite.size = CGSize(width: 50, height: 50)
         self.readiedShot = (currentWeapon(), currentWeapon())
     }

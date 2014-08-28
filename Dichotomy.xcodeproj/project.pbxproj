@@ -12,6 +12,7 @@
 		7A01474C19A986CF00F62FDA /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474B19A986CF00F62FDA /* Laser.swift */; };
 		7A01474E19A9877B00F62FDA /* Weapon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474D19A9877B00F62FDA /* Weapon.swift */; };
 		7A01475019AAEE1500F62FDA /* Dichotomy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A01474F19AAEE1500F62FDA /* Dichotomy.swift */; };
+		7A85B06A19AE8F8B0012B92A /* EnemyShip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A85B06919AE8F8B0012B92A /* EnemyShip.swift */; };
 		7AA8ECFD19A931A000AFE9C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ECFC19A931A000AFE9C6 /* AppDelegate.swift */; };
 		7AA8ED0119A931A000AFE9C6 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ED0019A931A000AFE9C6 /* GameScene.swift */; };
 		7AA8ED0319A931A000AFE9C6 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA8ED0219A931A000AFE9C6 /* GameViewController.swift */; };
@@ -36,6 +37,7 @@
 		7A01474B19A986CF00F62FDA /* Laser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 		7A01474D19A9877B00F62FDA /* Weapon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weapon.swift; sourceTree = "<group>"; };
 		7A01474F19AAEE1500F62FDA /* Dichotomy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dichotomy.swift; sourceTree = "<group>"; };
+		7A85B06919AE8F8B0012B92A /* EnemyShip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnemyShip.swift; sourceTree = "<group>"; };
 		7AA8ECF719A931A000AFE9C6 /* Dichotomy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dichotomy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA8ECFB19A931A000AFE9C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AA8ECFC19A931A000AFE9C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 			name = Weapons;
 			sourceTree = "<group>";
 		};
+		7A85B06819AE8F6C0012B92A /* EnemyShips */ = {
+			isa = PBXGroup;
+			children = (
+				7A85B06919AE8F8B0012B92A /* EnemyShip.swift */,
+			);
+			name = EnemyShips;
+			sourceTree = "<group>";
+		};
 		7AA8ECEE19A931A000AFE9C6 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +122,7 @@
 				7AA8ED0419A931A100AFE9C6 /* Main.storyboard */,
 				7AA8ED0719A931A100AFE9C6 /* Images.xcassets */,
 				7A01474A19A986BC00F62FDA /* Weapons */,
+				7A85B06819AE8F6C0012B92A /* EnemyShips */,
 				7A01474919A947BB00F62FDA /* PlayerShips */,
 				7AA8ECFA19A931A000AFE9C6 /* Supporting Files */,
 			);
@@ -250,6 +261,7 @@
 				7A01475019AAEE1500F62FDA /* Dichotomy.swift in Sources */,
 				7A01474819A9476D00F62FDA /* Type0.swift in Sources */,
 				7AA8ECFD19A931A000AFE9C6 /* AppDelegate.swift in Sources */,
+				7A85B06A19AE8F8B0012B92A /* EnemyShip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

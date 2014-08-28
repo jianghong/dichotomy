@@ -8,5 +8,9 @@
 
 import SpriteKit
 
+protocol DichotomyDelegate {
+    func gameDidBegan(dicho: Dichotomy)
+}
 class Dichotomy {
+    
 }
