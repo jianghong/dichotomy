@@ -60,6 +60,12 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate, Dichoto
 
     func gameDidBegan(dicho: Dichotomy) {
         println("Begin game")
+        self.dichotomy.loadFirstWave()
+    }
+    
+    func firstWaveDidSpawn(dicho: Dichotomy) {
+        println("Spawn first wave")
+        self.scene.drawFirstWave()
     }
     
     override func prefersStatusBarHidden() -> Bool {

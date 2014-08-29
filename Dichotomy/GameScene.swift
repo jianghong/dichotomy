@@ -48,4 +48,12 @@ class GameScene: SKScene {
         let repeatShot = SKAction.repeatActionForever(fireAndWait)
         shotSprite.runAction(repeatShot)
     }
+    
+    func drawFirstWave() {
+        let firstEnemy = EnemyShip(enemyType: EnemyType.HyruleWarrior, size: CGSize(width: 50, height: 80))
+        let xPos = self.frame.size.width / 2
+        let yPos = self.frame.size.height - (firstEnemy.sprite.size.height / 1.3)
+        firstEnemy.sprite.position = CGPoint(x: xPos, y: yPos)
+        self.addChild(firstEnemy.sprite)
+    }
 }

@@ -10,7 +10,9 @@ import SpriteKit
 
 protocol DichotomyDelegate {
     func gameDidBegan(dicho: Dichotomy)
+    func firstWaveDidSpawn(dicho: Dichotomy)
 }
+
 class Dichotomy {
     var delegate: DichotomyDelegate?
     
@@ -20,5 +22,9 @@ class Dichotomy {
     
     func beginGame() {
         self.delegate?.gameDidBegan(self)
+    }
+    
+    func loadFirstWave() {
+        self.delegate?.firstWaveDidSpawn(self)
     }
 }
