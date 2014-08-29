@@ -12,5 +12,13 @@ protocol DichotomyDelegate {
     func gameDidBegan(dicho: Dichotomy)
 }
 class Dichotomy {
+    var delegate: DichotomyDelegate?
     
+    init() {
+        
+    }
+    
+    func beginGame() {
+        self.delegate?.gameDidBegan(self)
+    }
 }

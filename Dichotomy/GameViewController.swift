@@ -9,9 +9,10 @@
 import UIKit
 import SpriteKit
 
-class GameViewController: UIViewController, UIGestureRecognizerDelegate {
+class GameViewController: UIViewController, UIGestureRecognizerDelegate, DichotomyDelegate {
 
     var scene: GameScene!
+    var dichotomy: Dichotomy!
     var panPointReference:CGPoint?
 
     @IBAction func didPan(sender: UIPanGestureRecognizer) {
@@ -49,10 +50,18 @@ class GameViewController: UIViewController, UIGestureRecognizerDelegate {
         /* Set the scale mode to scale to fit the window */
         scene.scaleMode = .AspectFill
         
+        self.dichotomy = Dichotomy()
+        self.dichotomy.delegate = self
+        self.dichotomy.beginGame()
+        
         skView.presentScene(scene)
     }
 
 
+    func gameDidBegan(dicho: Dichotomy) {
+        println("Begin game")
+    }
+    
     override func prefersStatusBarHidden() -> Bool {
         return true
     }
