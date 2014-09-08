@@ -63,6 +63,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     func didBeginContact(contact: SKPhysicsContact!) {
-        println("We have contact!")
+        // have to check if the contact has been handled already or not
+        if !contact.bodyA.node || !contact.bodyB.node {
+            return;
+        }
+        
+        if contact.bodyA.categoryBitMask & DichoPhysicsCategories.Enemy != 0 {
+            contact.bodyA.node.removeFromParent()
+        } else {
+            contact.bodyB.node.removeFromParent()
+        }
     }
 }

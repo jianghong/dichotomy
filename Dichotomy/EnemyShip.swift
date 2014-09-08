@@ -35,8 +35,8 @@ class EnemyShip {
         self.sprite.size = size
         self.name = enemyType.enemyName
         // physics
-        // TO-DO: Stop freefall
         self.sprite.physicsBody = SKPhysicsBody(texture: self.sprite.texture, size: self.sprite.size)
+        self.sprite.physicsBody.dynamic = false
         self.sprite.physicsBody.categoryBitMask = DichoPhysicsCategories.Enemy
         self.sprite.physicsBody.contactTestBitMask = 0x0
         self.sprite.physicsBody.collisionBitMask = 0x0

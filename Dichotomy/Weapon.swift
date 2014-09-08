@@ -20,6 +20,7 @@ class Weapon {
         self.positionOffset = positionOffset
         // physics 
         self.sprite.physicsBody = SKPhysicsBody(texture: self.sprite.texture, size: self.sprite.size)
+        self.sprite.physicsBody.affectedByGravity = false
         self.sprite.physicsBody.categoryBitMask = DichoPhysicsCategories.Weapon
         self.sprite.physicsBody.contactTestBitMask = DichoPhysicsCategories.Enemy
         self.sprite.physicsBody.collisionBitMask = 0x0
