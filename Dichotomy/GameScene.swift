@@ -8,12 +8,16 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
     let ship: Type0!
     let shipSprite: SKSpriteNode!
     
     override init(size: CGSize) {
         super.init(size: size)
+        // physics stuff
+        self.physicsWorld.contactDelegate = self
+        
+        // ship stuff
         self.ship = Type0()
         self.shipSprite = ship.sprite
         shipSprite.position = CGPoint(x: self.frame.size.width / 2, y: shipSprite.size.height / 2)
@@ -23,6 +27,7 @@ class GameScene: SKScene {
         self.addChild(currWeapon.leftShot.sprite)
         self.addChild(currWeapon.rightShot.sprite)
         
+        // TO-DO: Use physics to move shots instead of action
         self.drawAndFireShots(currWeapon.leftShot.sprite)
         self.drawAndFireShots(currWeapon.rightShot.sprite)
     }
@@ -55,5 +60,9 @@ class GameScene: SKScene {
         let yPos = self.frame.size.height - (firstEnemy.sprite.size.height / 1.3)
         firstEnemy.sprite.position = CGPoint(x: xPos, y: yPos)
         self.addChild(firstEnemy.sprite)
+    }
+    
+    func didBeginContact(contact: SKPhysicsContact!) {
+        println("We have contact!")
     }
 }

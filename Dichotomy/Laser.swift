@@ -6,8 +6,11 @@
 //  Copyright (c) 2014 Jackson Hong. All rights reserved.
 //
 
+import SpriteKit
+
 class Laser: Weapon {
     init() {
         super.init(spriteName: "laser", damage: 1, positionOffset: 15.0, width: 4.0, height: 30.0)
+
     }
 }
